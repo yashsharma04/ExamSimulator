@@ -5,7 +5,10 @@
   Time: 7:10 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.sql.* , javax.sql.* , java.io.* , javax.naming.*" contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+
 <html>
 <head>
   <title>Exam Simulator </title>
@@ -19,12 +22,16 @@
       margin:auto;
       width:50%;
     }
-
   </style>
 </head>
 <body>
+<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
+                   url="jdbc:mysql://localhost/test"
+                   user="root"  password="Yash@sharma04"/>
 
-
+<sql:query dataSource="${snapshot}" var="result">
+  SELECT * from testtable;
+</sql:query>
 <nav>
   <div class="nav-wrapper" >
     <a href="#" class="brand-logo">Exam Simulator</a>
@@ -69,4 +76,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </body>
 </html>
-
