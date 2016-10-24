@@ -2,13 +2,28 @@
   Created by IntelliJ IDEA.
   User: yash
   Date: 10/21/2016
-  Time: 7:10 PM
+      Time: 7:10 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.sql.* , javax.sql.* , java.io.* , javax.naming.*" contentType="text/html;charset=UTF-8" language="java" %>
+
+<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
+<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>--%>
+<%
+    if (session.isNew())
+    {
+        session.setAttribute("count","1");
+    }
+    else
+    {
+        int count = Integer.parseInt(session.getAttribute("count").toString());
+
+    }
+%>
 <html>
 <head>
   <title>Exam Simulator </title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
@@ -19,10 +34,40 @@
       margin:auto;
       width:50%;
     }
-
   </style>
 </head>
+<script >
+  $(document).ready(function(){
+  $('#next').click(function(){
+        $.ajax({
+        type: "POST",
+        url: "change.jsp", // Map your servlet here.
+        data: { val : 1 }
+      }).done(function( msg ) {
+        alert( "Data Saved: " + msg );
+      });
+    });
+
+  $('#prev').click(function(){
+        $.ajax({
+        type: "POST",
+        url: "change.jsp", // Map your servlet here.
+        data: { val : 0  }
+      }).done(function( msg ) {
+        alert( "Data Saved: " + msg );
+      });
+    });
+   });
+
+</script>
 <body>
+<%--<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"--%>
+                   <%--url="jdbc:mysql://localhost/test"--%>
+                   <%--user="root"  password="Yash@sharma04"/>--%>
+
+<%--<sql:query dataSource="${snapshot}" var="result">--%>
+  <%--SELECT * from testtable;--%>
+<%--</sql:query>--%>
 
 
 <nav>
@@ -36,37 +81,44 @@
   </div>
 </nav>
 <div class="centerpan">
-  <h4 style="margin-top: 100px">Q1:What is your name</h4>
-  <br>
-  <form action="#">
-    <p>
-      <input name="group1" type="radio" id="test1" />
-      <label for="test1">Option 1</label>
-    </p>
-    <p>
-      <input name="group1" type="radio" id="test2" />
-      <label for="test2">Option 2</label>
-    </p>
-    <p>
-      <input class="with-gap" name="group1" type="radio" id="test3"  />
-      <label for="test3">Option 3 </label>
-    </p>
-    <p>
-      <input name="group1" type="radio" id="test4" />
-      <label for="test4">Option 4 </label>
-    </p>
-  </form>
-  <br>
-  <a class="waves-effect waves-light btn">Previous</a>
-  <a class="waves-effect waves-light btn">Next</a>
-  <br>
-  <br>
-  <a class="waves-effect waves-light btn">Submit</a>
+    <%--<c:forEach var="row" items="${result.rows}">--%>
+
+        <h4 style="margin-top: 100px">Q1 Whats your rashee</h4>
+        <br>
+        <form action="#">
+            <p>
+                <input name="group1" type="radio" id="test1" />
+                <label for="test1">option 1 </label>
+            </p>
+            <p>
+                <input name="group1" type="radio" id="test2" />
+                <label for="test2">option 2</label>
+            </p>
+            <p>
+                <input class="with-gap" name="group1" type="radio" id="test3"  />
+                <label for="test3">option 3 </label>
+            </p>
+            <p>
+                <input name="group1" type="radio" id="test4" />
+                <label for="test4">option 4 </label>
+            </p>
+        </form>
+        <br>
+        <%--<%--%>
+            <%--if(<c:out value="${row.id})"/> != '1')--%>
+            <%--{--%>
+                <%----%>
+            <%--}--%>
+        <%--%>--%>
+        <a id='prev' class="waves-effect waves-light btn">Previous</a>
+        <a id ='next' class="waves-effect waves-light btn">Next</a>
+        <br>
+        <br>
+        <a class="waves-effect waves-light btn">Submit</a>
+    </c:forEach>
+
 
 </div>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </body>
 </html>
-
