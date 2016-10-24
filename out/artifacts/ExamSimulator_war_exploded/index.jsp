@@ -23,7 +23,7 @@
 <html>
 <head>
   <title>Exam Simulator </title>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
@@ -61,6 +61,19 @@
 
 </script>
 <body>
+  <%--<%--%>
+      <%--String connectionURL = "jdbc:mysql://host/test";--%>
+      <%--Connection connection = null ;--%>
+      <%--Class.forName("com.mysql.jdbc.Driver").newInstance(); --%>
+      <%--connection = DriverManager.getConnection(connectionURL, "root", "Yash@sharma04");--%>
+      <%--if(!connection.isClosed())--%>
+      <%--{--%>
+        <%--out.println("Successfully connected to " + "MySQL server using TCP/IP...");--%>
+      <%--}--%>
+         <%----%>
+
+ <%--%> --%>
+
 <%--<sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"--%>
                    <%--url="jdbc:mysql://localhost/test"--%>
                    <%--user="root"  password="Yash@sharma04"/>--%>
@@ -83,7 +96,7 @@
 <div class="centerpan">
     <%--<c:forEach var="row" items="${result.rows}">--%>
 
-        <h4 style="margin-top: 100px">Q1 Whats your rashee</h4>
+        <h4 style="margin-top: 100px">Q1 Random Question</h4>
         <br>
         <form action="#">
             <p>
@@ -115,7 +128,7 @@
         <br>
         <br>
         <a class="waves-effect waves-light btn">Submit</a>
-    </c:forEach>
+         <%--</c:forEach> --%>
 
 
 </div>
