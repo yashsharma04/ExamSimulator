@@ -9,17 +9,17 @@
 
 <%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
 <%--<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>--%>
-<%
-    if (session.isNew())
-    {
-        session.setAttribute("count","1");
-    }
-    else
-    {
-        int count = Integer.parseInt(session.getAttribute("count").toString());
 
-    }
-%>
+<%--<%--%>
+    <%--int count  = 1 ;--%>
+    <%--if(session.isNew()) {--%>
+        <%--session.setAttribute("count","1");--%>
+    <%--}--%>
+    <%--else--%>
+    <%--{--%>
+        <%--count = (Integer.parseInt(session.getAttribute("count").toString()));--%>
+    <%--}--%>
+<%--%>--%>
 <html>
 <head>
   <title>Exam Simulator </title>
@@ -38,23 +38,29 @@
 </head>
 <script >
   $(document).ready(function(){
+
+    function func(){
+      window.open("results.jsp","_self");
+    }
   $('#next').click(function(){
         $.ajax({
         type: "POST",
-        url: "change.jsp", // Map your servlet here.
+        url: "change.jsp", 
         data: { val : 1 }
       }).done(function( msg ) {
-        alert( "Data Saved: " + msg );
+        // alert( "Data Saved: " + msg );
+        window.open("index.jsp","_self");
       });
     });
 
   $('#prev').click(function(){
         $.ajax({
         type: "POST",
-        url: "change.jsp", // Map your servlet here.
+        url: "change.jsp", 
         data: { val : 0  }
       }).done(function( msg ) {
-        alert( "Data Saved: " + msg );
+        // alert( "Data Saved: " + msg );
+        window.open("index.jsp","_self");
       });
     });
    });
@@ -98,7 +104,7 @@
 
         <h4 style="margin-top: 100px">Q1 Random Question</h4>
         <br>
-        <form action="#">
+        <form action="#"> 
             <p>
                 <input name="group1" type="radio" id="test1" />
                 <label for="test1">option 1 </label>
@@ -123,11 +129,16 @@
                 <%----%>
             <%--}--%>
         <%--%>--%>
-        <a id='prev' class="waves-effect waves-light btn">Previous</a>
-        <a id ='next' class="waves-effect waves-light btn">Next</a>
+
+          <!-- out.println("<a id='prev' class='waves-effect waves-light btn'>Previous</a>"); -->
+          <a id='prev' class='waves-effect waves-light btn'>Previous</a>
+          <!-- if (count!=5) -->
+          <!-- out.println("<a id ='next' class='waves-effect waves-light btn'>Next</a>"); -->
+        <a id ='next' class='waves-effect waves-light btn'>Next</a>
+        <!-- %> -->
         <br>
         <br>
-        <a class="waves-effect waves-light btn">Submit</a>
+        <a href="results.jsp" class="waves-effect waves-light btn">Submit</a>
          <%--</c:forEach> --%>
 
 

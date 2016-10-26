@@ -26,8 +26,7 @@
             cache: false,
             success: function(response)
             {
-//              alert(response.trim());
-                var res=response.trim();
+              var res=response.trim();
               if(res=="OK")
               {
 
