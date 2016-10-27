@@ -3,7 +3,7 @@
   <head>
       
     <!--Import materialize.css-->
-      <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
@@ -16,7 +16,6 @@
     <script>
       function validate ()
       {
-          alert("inside");
           var username = document.getElementById('username').value;
           var pwd  = document.getElementById('password').value;
           $.ajax({
@@ -34,7 +33,7 @@
               }
               else
               {
-                  Materialize.toast('Wrong Details !', 4000); // 4000 is the duration of the toast
+                  Materialize.toast('Wrong Credentials !', 4000); // 4000 is the duration of the toast
               }
             }
           });
