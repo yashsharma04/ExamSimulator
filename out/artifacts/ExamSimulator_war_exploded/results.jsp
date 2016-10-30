@@ -15,7 +15,6 @@
 	  <script >
 	  	function func(){
 	  		top.close();
-	  		
 	  	}
 	  </script>
 </head>
