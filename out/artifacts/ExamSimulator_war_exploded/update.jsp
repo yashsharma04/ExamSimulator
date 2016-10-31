@@ -19,9 +19,8 @@
     ResultSet rs= null;
     int id = Integer.parseInt(request.getParameter("val"));
     int count = Integer.parseInt(request.getParameter("count"));
-    if (id==1)
-    {
-        rs = st.executeQuery("update testtable set userAnswer=1 where id ="+count;
 
-    }
+        st.executeUpdate("update testtable set userAnswer="+id+" where id ="+count);
+
+
 %>

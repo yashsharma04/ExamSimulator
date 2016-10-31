@@ -9,99 +9,7 @@
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.Connection" %>
 
-<html>
-<head>
-  <title>Exam Simulator </title>
-  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-  <style>
-    .centerpan{
-      margin:auto;
-      width:50%;
-    }
-  </style>
-</head>
-<script >
-    function rad()
-    {
-        if (document.getElementById("test1").checked)
-        {
-            $.ajax({
-                type: "POST",
-                url: "update.jsp",
-                data: { "val" :1,"count":<%count%> }
-            }).done(function( msg ) {
-                console.log(response);
 
-            });
-        }
-        else if (document.getElementById("test2").checked)
-        {
-            $.ajax({
-                type: "POST",
-                url: "update.jsp",
-                data: { "val" : 2,"count":count }
-            }).done(function( msg ) {
-                console.log(response);
-
-            });
-        }
-        else if (document.getElementById("test3").checked)
-        {
-            $.ajax({
-                type: "POST",
-                url: "update.jsp",
-                data: { "val" : 3,"count":count }
-            }).done(function( msg ) {
-                console.log(response);
-
-            });
-        }
-        else if (document.getElementById("test4").checked)
-        {
-            $.ajax({
-                type: "POST",
-                url: "update.jsp",
-                data: { "val" : 4,"count":count }
-            }).done(function( msg ) {
-                console.log(response);
-            });
-        }
-
-
-    }
-  $(document).ready(function(){
-
-    function func(){
-        window.open('results.jsp', '_self','');
-
-    }
-
-
-  $('#next').click(function(){
-        $.ajax({
-        type: "POST",
-        url: "change.jsp",
-        data: { val : 1 }
-      }).done(function( msg ) {
-        // alert( "Data Saved: " + msg );
-        window.open("index.jsp","_self");
-      });
-    });
-  $('#prev').click(function(){
-        $.ajax({
-        type: "POST",
-        url: "change.jsp",
-        data: { val : 0  }
-      }).done(function( msg ) {
-        // alert( "Data Saved: " + msg );
-        window.open("index.jsp","_self");
-      });
-    });
-   });
-</script>
-<body>
 <%
     int count = 1;
     ArrayList list = new ArrayList();
@@ -159,6 +67,100 @@
         option4 = rs.getString(6);
     }
 %>
+<html>
+<head>
+  <title>Exam Simulator </title>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <style>
+    .centerpan{
+      margin:auto;
+      width:50%;
+    }
+  </style>
+</head>
+<script >
+    function rad()
+    {
+        if (document.getElementById("test1").checked)
+        {
+            $.ajax({
+                type: "POST",
+                url: "update.jsp",
+                data: { "val" :1,"count":<%out.print(count);%> }
+            }).done(function( msg ) {
+                console.log(msg);
+
+            });
+        }
+        else if (document.getElementById("test2").checked)
+        {
+            $.ajax({
+                type: "POST",
+                url: "update.jsp",
+                data: { "val" : 2,"count":<%out.print(count);%> }
+            }).done(function( msg ) {
+                console.log(msg);
+
+            });
+        }
+        else if (document.getElementById("test3").checked)
+        {
+            $.ajax({
+                type: "POST",
+                url: "update.jsp",
+                data: { "val" : 3,"count":<%out.print(count);%> }
+            }).done(function( msg ) {
+                console.log(msg);
+
+            });
+        }
+        else if (document.getElementById("test4").checked)
+        {
+            $.ajax({
+                type: "POST",
+                url: "update.jsp",
+                data: { "val" : 4,"count":<%out.print(count);%>}
+            }).done(function( msg ) {
+                console.log(msg);
+            });
+        }
+
+
+    }
+  $(document).ready(function(){
+
+    function func(){
+        window.open('results.jsp', '_self','');
+
+    }
+
+
+  $('#next').click(function(){
+        $.ajax({
+        type: "POST",
+        url: "change.jsp",
+        data: { val : 1 }
+      }).done(function( msg ) {
+        // alert( "Data Saved: " + msg );
+        window.open("index.jsp","_self");
+      });
+    });
+  $('#prev').click(function(){
+        $.ajax({
+        type: "POST",
+        url: "change.jsp",
+        data: { val : 0  }
+      }).done(function( msg ) {
+        // alert( "Data Saved: " + msg );
+        window.open("index.jsp","_self");
+      });
+    });
+   });
+</script>
+<body>
+
 <nav>
   <div class="nav-wrapper" >
     <a href="#" class="brand-logo">Exam Simulator</a>
