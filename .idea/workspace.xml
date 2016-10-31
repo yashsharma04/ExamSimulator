@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9bb6670-a799-42ba-ba46-a5276780dedc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/update.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/results.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/results.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/results.jsp" afterPath="$PROJECT_DIR$/web/results.jsp" />
     </list>
     <ignored path="ExamSimulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +30,22 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="107" column="15" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="15" />
+            <state relative-caret-position="204">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding>
-                <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-                <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+                <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/update.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+              <folding>
+                <marker date="1477928113885" expanded="true" signature="802:848" ph="insert into testtable... " />
               </folding>
             </state>
           </provider>
@@ -44,7 +54,7 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="731">
               <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding />
             </state>
@@ -95,6 +105,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -110,6 +127,7 @@
         <option value="$PROJECT_DIR$/web/check_login.jsp" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/web/results.jsp" />
+        <option value="$PROJECT_DIR$/web/update.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
@@ -889,6 +907,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d9bb6670-a799-42ba-ba46-a5276780dedc" name="Default" comment="" />
@@ -906,15 +927,16 @@
       <workItem from="1477536399465" duration="7637000" />
       <workItem from="1477618759839" duration="274000" />
       <workItem from="1477726181878" duration="620000" />
-      <workItem from="1477778667769" duration="4835000" />
+      <workItem from="1477778667769" duration="4897000" />
+      <workItem from="1477890784187" duration="9338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59586000" />
+    <option name="totallyTimeSpent" value="68986000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -967,16 +989,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/check_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <marker date="1477602733664" expanded="true" signature="291:293" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/change.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1006,8 +1018,7 @@
         <state relative-caret-position="765">
           <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1059,8 +1070,7 @@
         <state relative-caret-position="765">
           <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1112,8 +1122,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1165,8 +1174,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1218,8 +1226,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1263,8 +1270,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1308,8 +1314,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1327,8 +1332,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1346,8 +1350,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1364,24 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/check_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <marker date="1477602733664" expanded="true" signature="291:293" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/change.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1403,19 +1388,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="731">
           <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/check_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding>
+            <marker date="1477602733664" expanded="true" signature="291:293" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/change.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <marker date="1477928113885" expanded="true" signature="802:848" ph="insert into testtable... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="107" column="15" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="15" />
+        <state relative-caret-position="204">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding>
-            <marker date="1477782677932" expanded="true" signature="1763:1786" ph="select * fro... testtable" />
-            <marker date="1477782677932" expanded="true" signature="1763:1797" ph="select * fro... testtable" />
+            <marker date="1477928857803" expanded="true" signature="3609:3643" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
