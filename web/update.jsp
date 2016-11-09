@@ -20,10 +20,9 @@
         ResultSet rs= null;
         int id = Integer.parseInt(request.getParameter("val"));
         int count = Integer.parseInt(request.getParameter("count"));
-        ArrayList list = new ArrayList() ;
-        list = (ArrayList) session.getAttribute("list");
-        list.set(count , id );
-        
+        //ArrayList list = new ArrayList() ;
+        //list = (ArrayList) session.getAttribute("list");
+        //list.set(count, id );
         st.executeUpdate("UPDATE testtable SET userAnswer="+id+" WHERE id ="+count);
         out.println(id) ;
         out.println(count) ;

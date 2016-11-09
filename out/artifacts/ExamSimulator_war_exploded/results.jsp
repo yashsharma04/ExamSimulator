@@ -51,25 +51,31 @@
         int totalAns =0 ;
         int notAttempted =0 ; 
         int totalQuestions =5 ;
+        int wrongAns =0 ;
         while (rs.next())
-        {
-			
+        {			
         	if (rs.getInt(8)==rs.getInt(7))
         	{
-        		correctAns += 1 ;
+        		correctAns++ ;
         	}
-
+        	if (rs.getInt(8)==-1)
+        	{
+        		notAttempted++ ;
+        	}
+        	else if (rs.getInt(8)!=rs.getInt(7) && rs.getInt(8)!=-1)
+        	{
+        		wrongAns++ ;
+        	}
         	i++ ;   
         } 
 %>
 <body>
-
 	  <div class="row">
 	    <div class="col s12 m6 " style="margin-left: 400px">
 	      <div class="card blue-grey darken-1">
 	        <div class="card-content white-text">
 	          <span class="card-title">You have finished your Test</span>
-	          <p> You Scored  out of  questions  <br></p>
+	          <p> You Scored <%out.println();%> out of  questions  <br></p>
 	        </div>
 	        <div class="card-action">
 	         
@@ -77,11 +83,11 @@
 				 <div class="progress">
 			      <div class="determinate" style="width: 70%"></div>
 			  </div>
-				Question Not Attempted =  <br>
+				Question Not Attempted = <%out.println(""+notAttempted);%> <br>
 				 <div class="progress">
 			      <div class="determinate" style="width: 50%"></div>
 			  </div>
-				Questions Wrong = 0 <br> 
+				Questions Wrong =  <%out.println(""+wrongAns);%><br> 
 				 <div class="progress">
 				      <div class="determinate" style="width: 30%"></div>
 				  </div>

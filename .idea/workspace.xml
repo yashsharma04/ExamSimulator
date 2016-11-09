@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d9bb6670-a799-42ba-ba46-a5276780dedc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/results.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/results.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/update.jsp" afterPath="$PROJECT_DIR$/out/artifacts/ExamSimulator_war_exploded/update.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/results.jsp" afterPath="$PROJECT_DIR$/web/results.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/update.jsp" afterPath="$PROJECT_DIR$/web/update.jsp" />
     </list>
     <ignored path="ExamSimulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +34,7 @@
             <state relative-caret-position="315">
               <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
               <folding>
-                <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+                <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
               </folding>
             </state>
           </provider>
@@ -44,9 +44,10 @@
         <entry file="file://$PROJECT_DIR$/web/update.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
-                <marker date="1478711989591" expanded="true" signature="935:984" ph="UPDATE testt... " />
+                <marker date="1478722784043" expanded="true" signature="391:1125" ph="..." />
+                <marker date="1478722784043" expanded="true" signature="931:980" ph="UPDATE testt... " />
               </folding>
             </state>
           </provider>
@@ -97,10 +98,10 @@
       <file leaf-file-name="results.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/results.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="556">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding>
-                <marker date="1478718522258" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
+                <marker date="1478721276461" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
               </folding>
             </state>
           </provider>
@@ -932,12 +933,12 @@
       <workItem from="1477726181878" duration="620000" />
       <workItem from="1477778667769" duration="4897000" />
       <workItem from="1477890784187" duration="10811000" />
-      <workItem from="1478708842250" duration="6363000" />
+      <workItem from="1478708842250" duration="8623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76822000" />
+    <option name="totallyTimeSpent" value="79082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -1014,7 +1015,7 @@
         <state relative-caret-position="221">
           <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
-            <marker date="1478718522258" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
+            <marker date="1478721276461" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1024,7 +1025,7 @@
         <state relative-caret-position="765">
           <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1068,7 +1069,7 @@
         <state relative-caret-position="221">
           <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
-            <marker date="1478718522258" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
+            <marker date="1478721276461" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1078,7 +1079,7 @@
         <state relative-caret-position="765">
           <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1122,7 +1123,7 @@
         <state relative-caret-position="221">
           <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
           <folding>
-            <marker date="1478718522258" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
+            <marker date="1478721276461" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1132,7 +1133,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1142,7 +1143,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718522258" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
+            <marker date="1478721276461" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1186,7 +1187,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1196,7 +1197,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718522258" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
+            <marker date="1478721276461" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1240,7 +1241,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1284,7 +1285,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1328,7 +1329,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1346,7 +1347,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1364,7 +1365,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
@@ -1421,9 +1422,10 @@
     <entry file="file://$PROJECT_DIR$/web/update.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <marker date="1478711989591" expanded="true" signature="935:984" ph="UPDATE testt... " />
+            <marker date="1478722784043" expanded="true" signature="391:1125" ph="..." />
+            <marker date="1478722784043" expanded="true" signature="931:980" ph="UPDATE testt... " />
           </folding>
         </state>
       </provider>
@@ -1433,17 +1435,17 @@
         <state relative-caret-position="315">
           <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
           <folding>
-            <marker date="1478718364198" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
+            <marker date="1478722614409" expanded="true" signature="1282:1316" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/results.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="556">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
           <folding>
-            <marker date="1478718522258" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
+            <marker date="1478721276461" expanded="true" signature="1067:1090" ph="select * fro... testtable" />
           </folding>
         </state>
       </provider>

@@ -83,7 +83,7 @@
     {
         if (document.getElementById("test1").checked)
         {
-            alert("hello");
+            alert("done");
             $.ajax({
                 type: "GET",
                 url: "update.jsp",
@@ -95,7 +95,7 @@
         else if (document.getElementById("test2").checked)
         {
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "update.jsp",
                 data: { "val" : 2,"count":<%out.print(count);%> }
             }).done(function( msg ) {
@@ -106,7 +106,7 @@
         else if (document.getElementById("test3").checked)
         {
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "update.jsp",
                 data: { "val" : 3,"count":<%out.print(count);%> }
             }).done(function( msg ) {
@@ -117,7 +117,7 @@
         else if (document.getElementById("test4").checked)
         {
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "update.jsp",
                 data: { "val" : 4,"count":<%out.print(count);%>}
             }).done(function( msg ) {
