@@ -1,3 +1,4 @@
+<%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +19,49 @@
 	  	}
 	  </script>
 </head>
+<%
+
+       try {
+		    Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+		    e.printStackTrace();
+		}
+		Connection con = null;
+		try {
+		    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
+
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		}
+		Statement st= null;
+		try {
+		    st = con.createStatement();
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		}
+		ResultSet rs= null;
+		try {
+		    rs = st.executeQuery("select * from testtable");
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		}
+    
+        int i  =0 ; 
+        int correctAns =0 ;
+        int totalAns =0 ;
+        int notAttempted =0 ; 
+        int totalQuestions =5 ;
+        while (rs.next())
+        {
+			
+        	if (rs.getInt(8)==rs.getInt(7))
+        	{
+        		correctAns += 1 ;
+        	}
+
+        	i++ ;   
+        } 
+%>
 <body>
 
 	  <div class="row">
@@ -25,15 +69,15 @@
 	      <div class="card blue-grey darken-1">
 	        <div class="card-content white-text">
 	          <span class="card-title">You have finished your Test</span>
-	          <p> You Scored 10 out of 25 questions  <br></p>
+	          <p> You Scored  out of  questions  <br></p>
 	        </div>
 	        <div class="card-action">
 	         
-				Questions Right = 0 <br>
+				Questions Right = <%out.println(""+correctAns);%>  <br>
 				 <div class="progress">
 			      <div class="determinate" style="width: 70%"></div>
 			  </div>
-				Question Not Attempted = 25 <br>
+				Question Not Attempted =  <br>
 				 <div class="progress">
 			      <div class="determinate" style="width: 50%"></div>
 			  </div>
@@ -52,6 +96,6 @@
 	  </div>
 	<!--Import jQuery before materialize.js-->
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></scr
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </body>
 </html>
