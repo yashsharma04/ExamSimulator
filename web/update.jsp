@@ -1,7 +1,7 @@
 <%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.DriverManager" %>
+<%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.ResultSet" %><%--
+<%@ page import="static java.sql.DriverManager.*" %><%--
   Created by IntelliJ IDEA.
   User: yash
   Date: 10/31/2016
@@ -11,16 +11,28 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
 
-    Class.forName("com.mysql.jdbc.Driver");
-    Connection con = null;
-    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
-    Statement st= null;
-    st = con.createStatement();
-    ResultSet rs= null;
-    int id = Integer.parseInt(request.getParameter("val"));
-    int count = Integer.parseInt(request.getParameter("count"));
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con;
+        con = getConnection("jdbc:mysql://localhost:3306/test","root","");
+        Statement st;
+        st = con.createStatement();
+        ResultSet rs= null;
+        int id = Integer.parseInt(request.getParameter("val"));
+        int count = Integer.parseInt(request.getParameter("count"));
+        ArrayList list = new ArrayList() ;
+        list = (ArrayList) session.getAttribute("list");
+        list.set(count , id );
+        
+        st.executeUpdate("UPDATE testtable SET userAnswer="+id+" WHERE id ="+count);
+        out.println(id) ;
+        out.println(count) ;
+          }
+    catch (Exception e)
+    {
+        e.printStackTrace();
+    }
 
-        st.executeUpdate("update testtable set userAnswer="+id+" where id ="+count);
 
 
 %>

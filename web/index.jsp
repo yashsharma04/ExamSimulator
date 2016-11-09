@@ -8,17 +8,15 @@
 <%@ page import="java.sql.* , javax.sql.* , java.io.* , javax.naming.*" contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.Connection" %>
-
-
 <%
     int count = 1;
     ArrayList list = new ArrayList();
 
-    for (int i =0 ; i<5;i++)
-        list.add(0);
 
     if (session.isNew())
     {
+        for (int i =0 ; i<5;i++)
+            list.add(-1);
         session.setAttribute("count",1);
         session.setAttribute("list",list);
     }
@@ -52,7 +50,7 @@
     } catch (SQLException e) {
         e.printStackTrace();
     }
-    String question  = "";
+    String question = "";
     String option1 = "" ;
     String option2 = "";
     String option3 = "";
@@ -85,13 +83,13 @@
     {
         if (document.getElementById("test1").checked)
         {
+            alert("hello");
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "update.jsp",
                 data: { "val" :1,"count":<%out.print(count);%> }
             }).done(function( msg ) {
                 console.log(msg);
-
             });
         }
         else if (document.getElementById("test2").checked)

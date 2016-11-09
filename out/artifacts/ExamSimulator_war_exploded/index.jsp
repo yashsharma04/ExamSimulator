@@ -14,11 +14,10 @@
     int count = 1;
     ArrayList list = new ArrayList();
 
-    for (int i =0 ; i<5;i++)
-        list.add(0);
-
     if (session.isNew())
     {
+        for (int i =0 ; i<5;i++)
+            list.add(0);
         session.setAttribute("count",1);
         session.setAttribute("list",list);
     }
@@ -85,13 +84,13 @@
     {
         if (document.getElementById("test1").checked)
         {
+            alert("hello");
             $.ajax({
-                type: "POST",
+                type: "GET",
                 url: "update.jsp",
                 data: { "val" :1,"count":<%out.print(count);%> }
             }).done(function( msg ) {
                 console.log(msg);
-
             });
         }
         else if (document.getElementById("test2").checked)
